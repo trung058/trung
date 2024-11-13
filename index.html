@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UpDog</title>
+    <meta name="comp1800 template" content="My 1800 App">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Other libraries go here -->
+
+    <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/loggedout.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <!--Landing page stylesheets-->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/ctas/cta-1/assets/css/cta-1.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+</head>
+
+<body>
+    <!------------------------------>
+    <!-- Your HTML Layout go here -->
+    <script>
+        logout();       //make sure user is logged out
+    </script>
+
+    <!-- our own navbar goes here -->
+    <nav id="navbarPlaceholder"></nav>
+
+    <!-- Welcome Banner -->
+    <div class="custom-background">
+        <div class="landing-image">
+            <img src="./styles/images/paw-print-trail-on-white-background-cat-or-dog-and-man-pawprint-walk-line-path-pattern-background-vector.jpg"
+                alt="Background Image">
+        </div>
+        <div class="container text-center py-5">
+            <h1 class="display-5 fw-bold">What's UpDog!</h1>
+            <p class="fs-4">Let's connect you and your pal with others!</p>
+            <a href="login.html" class="btn btn-warning" role="button">Login/Register</a>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards container my-5">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-warning-subtle shadow-sm">
+                    <img src="./styles/images/groupdogowners.jpeg" class="card-img-top" alt="Group of dog owners">
+                    <div class="card-body">
+                        <h5 class="card-title">Socializing with Dog Owners</h5>
+                        <p class="card-text">Designed to help dog owners connect with each other and enhance their
+                            experience of owning a pet.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-warning-subtle shadow-sm">
+                    <img src="./styles/images/playdatesdogs.webp" class="card-img-top" alt="Dog playdates">
+                    <div class="card-body">
+                        <h5 class="card-title">Playdates For Pets</h5>
+                        <p class="card-text">Our app lets you create and join playdates allowing you and your pets to meet new companions.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-warning-subtle shadow-sm">
+                    <img src="./styles/images/parknavigation.webp" class="card-img-top" alt="Group of dog owners">
+                    <div class="card-body">
+                        <h5 class="card-title">Efficient Park Navigation</h5>
+                        <p class="card-text">Consists of various features to assist you in easily navigating to the park that you desire.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-light border-top">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+    </footer>
+
+
+    <!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+    <script src="./scripts/firebaseAPI_UpDog.js"></script>
+    <script src="./scripts/skeleton.js"></script>
+    <script src="./scripts/script.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
+
+</body>
+
+</html>
